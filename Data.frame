@@ -1,7 +1,19 @@
-VectorA<-c("Falla sistema urinario", "Neoplasia", "Infeccioso", "Trauma", "Falla sistema cardiovascular", "Muerte súbita", "Cuerpo extraño")
-VectorB<-c(16,13,23,19,4,3,1)
-VectorC<-c(33,23,15,5,6,3,5)
-VectorD<-c(47,50,13,3,9,1,0)
-VectorE<-c(43,37,2,1,2,0,0)
-tabla<-data.frame(Motivo_de_muerte=VectorA,0_a_4_años=VectorB,5_a_9_años=VectorC,10_a_14_años=VectorD,15_años_o_más=VectorE)
+# Vectores con los datos
+VectorA <- c("Falla sistema urinario", "Neoplasia", "Infeccioso", "Trauma", 
+             "Falla sistema cardiovascular", "Muerte súbita", "Cuerpo extraño")
+VectorB <- c(16, 13, 23, 19, 4, 3, 1)
+VectorC <- c(33, 23, 15, 5, 6, 3, 5)
+VectorD <- c(47, 50, 13, 3, 9, 1, 0)
+VectorE <- c(43, 37, 2, 1, 2, 0, 0)
+
+# Crear el dataframe
+tabla <- data.frame(
+  Motivo_de_muerte = VectorA,
+  "0_a_4_años" = VectorB,
+  "5_a_9_años" = VectorC,
+  "10_a_14_años" = VectorD,
+  "15_años_o_más" = VectorE
+)
+
+# Mostrar tabla
 print(tabla)
