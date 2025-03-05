@@ -1,0 +1,27 @@
+---
+title: "Examen MT1"
+author: "Alegria Larrea"
+date: "2025-03-05"
+output: html_document
+---
+
+```{r}
+install.packages("pacman")
+library("pacman")
+p_load("readr", 
+       "dplyr",
+       "ggplot2")
+```
+Creacion de objetos 
+```{r}
+Vector1<-c("Border Colie","Schnauzer","Gran Danes","Chihuaha","Criollo")
+Vector2<-c(3,9,3,4,5)
+Vector3<-c(4,3.5,3,7,4.5)
+```
+Crear Dataframe 
+```{r}
+Razas_perros <-data.frame(Raza=Vector1,
+                      Total_perros=Vector2,
+                      Edad_promedio=Vector3)
+Razas_perros
+```
